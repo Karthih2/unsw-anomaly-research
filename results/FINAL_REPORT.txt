@@ -1,0 +1,58 @@
+======================================================================
+NETWORK INTRUSION DETECTION - COMPARATIVE STUDY
+FINAL RESULTS REPORT
+======================================================================
+
+1. DATASET INFORMATION
+----------------------------------------------------------------------
+Total Samples: 2059408
+Training Samples: 1318020
+Validation Samples: 329506
+Test Samples: 411882
+Features: 194
+Normal Traffic: 391953 (95.2%)
+Attack Traffic: 19929 (4.8%)
+
+2. MODELS EVALUATED
+----------------------------------------------------------------------
+- Autoencoder (AE)
+- Isolation Forest (IF)
+- Local Outlier Factor (LOF)
+- Support Vector Machine (SVM)
+- AE + IF (Hybrid)
+- AE + LOF (Hybrid)
+- AE + SVM (Hybrid)
+
+3. PERFORMANCE RESULTS
+----------------------------------------------------------------------
+         ROC-AUC    PR-AUC  F1-Score  Accuracy  Precision    Recall
+AE      0.984780  0.586169  0.783410  0.973286   0.644565  0.998495
+IF      0.950859  0.406885  0.411083  0.865930   0.261017  0.967083
+AE+IF   0.984223  0.606587  0.672471  0.953237   0.508591  0.992172
+LOF     0.767036  0.460722  0.311221  0.874029   0.211588  0.588188
+AE+LOF  0.786735  0.449785  0.316033  0.872495   0.213406  0.608811
+SVM     0.996797  0.925490  0.872488  0.985860   0.773937  0.999799
+AE+SVM  0.996834  0.924873  0.866403  0.985088   0.764677  0.999348
+
+4. STATISTICAL SIGNIFICANCE
+----------------------------------------------------------------------
+Best Model: SVM
+Friedman Test: χ²=153166.3550, p=0.000000
+Result: Significant differences exist (p < 0.05)
+
+5. KEY FINDINGS
+----------------------------------------------------------------------
+- Best F1-Score: SVM (0.8725)
+- Best ROC-AUC: AE+SVM (0.9968)
+- Best Recall: SVM (0.9998)
+- Best Precision: SVM (0.7739)
+
+6. RECOMMENDATIONS
+----------------------------------------------------------------------
+For production deployment: SVM
+For maximum detection: SVM
+For minimum false alarms: SVM
+
+======================================================================
+END OF REPORT
+======================================================================

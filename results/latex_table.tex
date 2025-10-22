@@ -1,0 +1,18 @@
+\begin{table}[h]
+\centering
+\caption{Performance Comparison of Anomaly Detection Models}
+\label{tab:results}
+\begin{tabular}{lcccccc}
+\hline
+Model & ROC-AUC & PR-AUC & F1-Score & Precision & Recall & Accuracy \\
+\hline
+AE & 0.9848 & 0.5862 & 0.7834 & 0.6446 & 0.9985 & 0.9733 \\
+IF & 0.9509 & 0.4069 & 0.4111 & 0.2610 & 0.9671 & 0.8659 \\
+AE+IF & 0.9842 & 0.6066 & 0.6725 & 0.5086 & 0.9922 & 0.9532 \\
+LOF & 0.7670 & 0.4607 & 0.3112 & 0.2116 & 0.5882 & 0.8740 \\
+AE+LOF & 0.7867 & 0.4498 & 0.3160 & 0.2134 & 0.6088 & 0.8725 \\
+SVM & 0.9968 & 0.9255 & 0.8725 & 0.7739 & 0.9998 & 0.9859 \\
+AE+SVM & 0.9968 & 0.9249 & 0.8664 & 0.7647 & 0.9993 & 0.9851 \\
+\hline
+\end{tabular}
+\end{table}
