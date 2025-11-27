@@ -238,7 +238,7 @@ Rajalakshmi Engineering College
 
 ---
 
-# **Recommended GitHub Tags**
+# **Tags**
 machine-learning, cybersecurity, anomaly-detection,
 intrusion-detection-system, unsw-nb15, autoencoder,
 svm, lof, isolation-forest, hybrid-models, python,
